@@ -1,0 +1,125 @@
+.mixslider {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+.mixslider-wrap {
+    position: relative
+}
+
+.mixslider-wrap.mixslider-carousel>li {
+    float: left
+}
+
+.mixslider-vertical>ul {
+    height: 100%
+}
+
+.mixslider-vertical li {
+    float: none;
+    width: 100%
+}
+
+.mixslider-fade {
+    position: relative
+}
+
+.mixslider-fade .mixslider-wrap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 8
+}
+
+.mixslider-fade .mixslider-wrap li.mixslider-active {
+    z-index: 10
+}
+
+.mixslider li,
+.mixslider ol,
+.mixslider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+.mixslider-arrow {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: auto;
+    display: none;
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    cursor: pointer;
+    margin-top: -16px;
+    background: no-repeat 50% 50%;
+    background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==);
+    border: 1px solid #F03637;
+    text-indent: -999em;
+    opacity: 1;
+    transition: opacity 1s;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.mixslider-arrow:hover {
+    opacity: 1;
+    background-color: #F03637;
+}
+
+.mixslider-arrow.prev {
+    left: 8px;;
+    right: auto;
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+}
+
+.mixslider-arrow.next {
+    left: auto;
+    right: 8px;
+}
+
+.mixslider-nav {
+    position: absolute;
+    top: auto;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.mixslider-nav ol {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mixslider-nav ol li {
+    display: block;
+    float: none;
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+    padding: 4px;
+    background: #ffffff;
+    border-radius: 7px;
+    overflow: hidden;
+    text-indent: -999em;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.mixslider-nav ol li.mixslider-active {
+    background: #E4853F;
+    cursor: default;
+    opacity: 1;
+}

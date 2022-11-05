@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Main Menu*/
+#main-menu-container {
+    padding: 0;
+    width: 95%;
+    height: 80px;
+    border-bottom: 1px solid #dfdfdf47;
+}
+#main-meu-row {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+    height: 80px;
+}
+#main-menu-col{
+    padding: 0;
+}
+.shop-logo-img{
+    width: 80%;
+}
+.main-menu-container-inner-element {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.main-menu-container-inner-element li {
+    margin-right: 16px;
+}
+.main-menu-container-inner-element a {
+    padding-right: 14px;
+    color: #000;
+    text-decoration: none !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+.main-menu-container-inner-element a:hover{
+    color: #E4853F;
+
+}
+.lang {
+    padding-right: 6px;
+}
+.main-menu-inner-element {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.main-menu-inner-element li {
+    margin-inline: 8px;
+}
+.main-menu-inner-element li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid #fff;
+    letter-spacing: 1px;
+}
+.main-menu-inner-element li a:hover{
+    color: #E4853F;
+    border-bottom: 2px solid #E4853F;
+}    
+
+
+.man-menu-right-element {
+    display: flex;
+    align-content: center;
+    justify-content: end;
+}
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 7px 6px;
+    /* margin-top: 7px; */
+    background: transparent;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.close-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 7px 6px;
+    /* margin-top: 7px; */
+    background: transparent;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+.search-btn:hover{
+    color: #E4853F;
+}
+.search-btn.hide-btn{
+    opacity: 0;
+    pointer-events: none;
+}
+.close-btn.unhide-btn{
+    opacity: 1;
+    pointer-events: all;
+}
+/*Search Box*/
+.search-box {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in;
+}
+.search-box.open-box{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 99;
+}
+.search-bar {
+    padding: 5px 36px 5px 5px;
+    font-size: 15px;
+    color: #000;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+.search-box-inner-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #E4853F;
+    color: #ffff;
+    cursor: pointer;
+}
+
+/* Here is page title */
+.container-page-title {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image: url(../image-collection-1/news-letter/newsletter-bkg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.page-title {
+    text-align: center;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-title-element {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Here is Product */
+
+.product-wrapper {
+    margin-top: 6%;
+    padding: 0;
+    margin: 0;
+}
+/* Here is Product Nav */
+
+.container-product-nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    margin-top: 10px;
+}
+.product-nav-top-right-element {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.product-nav-top-right-element li {
+    margin-inline: 4px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.product-nav-top-right-element li:hover{
+    color: #E4853F;
+}
+.filter-icon,
+.grid-icon,
+.list-icon{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.product-nav-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showing-item {
+    font-size: 17px;
+    color: #000;
+}
+.show-number-arrow {
+    padding-left: 4px;
+}
+.show-number {
+    /* display: flex; */
+    /* align-items: center; */
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    color: #a39d9d;
+}
+.product-relavance {
+    font-size: 17px;
+    padding: 5px;
+    border: 1px solid #dfdfdf;
+    margin-left: 7px;
+    color: #a39d9d;
+}
+
+
+/* Here is filter menu */
+
+.filter-menu {
+    position: fixed;
+    top: 0;
+    z-index: 555;
+    width: 300px;
+    background-color: #fff;
+    height: 100vh;
+    transform: translateX(-300px);
+    transition: all 0.3s ease-in-out;
+}
+.filter-menu.active{
+    transform: translateX(0px);
+}
+.filter-menu-inner-headding {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: #dfdfdf;
+    align-items: center;
+    padding: 0 12px;
+}
+.filter-close-btn {
+    font-size: 30px;
+    transition: all 0.3s ease-in;
+}
+.filter-close-btn:hover{
+    color: #E4853F;
+}
+.overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 444;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+.overly.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+

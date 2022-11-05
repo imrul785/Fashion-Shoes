@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - Shop</title>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tab icon -->
+    <link rel="icon" href="../image-collection-1/logo/logo.png" sizes="192x192" />
+</head>
+<body>
+    
+    <!--Main Menu-->
+
+    <section class="main-menu">
+        <div class="container-fluid" id="main-menu-container">
+            <div class="row" id="main-meu-row">
+                <div class="col-2" id="main-menu-col">
+                    <div class="main-menu-container-inner">
+                        <div class="menu-logo">
+                            <img src="../image-collection-1/logo/logo.png" alt="logo" class="shop-logo-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" id="main-menu-col">
+                    <nav class="main-menu-container-inner">
+                        <ul class="main-menu-inner-element">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Baby & Kids</a></li>
+                            <li><a href="#">Men & women</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">More</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-1" id="main-menu-col">
+                    <div class="man-menu-right-element">
+                        <button class="search-btn"><i class='bx bx-search' ></i></button>
+                        <button class="close-btn"><i class='bx bx-x'></i></button>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search..." class="search-bar">
+                            <span class="search-box-inner-icon"><i class='bx bx-search' ></i></span>
+                        </div>
+
+                        <script>
+                            let searchbtn = document.querySelector(".search-btn"),
+                                closebtn = document.querySelector(".close-btn"),
+                                searchbox = document.querySelector(".search-box");
+
+                                searchbtn.addEventListener('click', ()=> searchbox.classList.add("open-box"));
+                                searchbtn.addEventListener('click', ()=> searchbtn.classList.add("hide-btn"));
+                                searchbtn.addEventListener('click', ()=> closebtn.classList.add("unhide-btn"));
+                                closebtn.addEventListener('click', ()=> searchbox.classList.remove("open-box"));
+                                closebtn.addEventListener('click', ()=> searchbtn.classList.remove("hide-btn"));
+                                closebtn.addEventListener('click', ()=> closebtn.classList.remove("unhide-btn"));
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Here is page Page title -->
+
+    <div class="container-page-title">
+        <div class="page-title">
+            <h1 class="page-title-element">Shop</h1>
+        </div>
+    </div>
+
+    <!-- Here is Product -->
+
+    <section class="product-wrapper">
+        
+        <!-- Here is Product Nav -->
+
+        <section class="container-product-nav">
+            <div class="product-nav-top-left">
+                <ul class="product-nav-top-right-element">
+                    <li class="filter"><span class="filter-icon"><i class='bx bx-filter' ></i></span> Filter</li>
+                    <li class="grid-view"><span class="grid-icon"><i class='bx bxs-grid' ></i></span></li>
+                    <li class="list-view"><span class="list-icon"><i class='bx bx-list-ul' ></i></span></li>
+                </ul>
+            </div>
+            <div class="product-nav-top-right">
+                <div class="product-showing-item">
+                    <span class="showing-item">Showing 1-12 of 19 item(s)</span> <span class="show-number">12 <span class="show-number-arrow"><i class='bx bxs-chevron-down'></i></span>
+                </div>
+                <div class="product-relavance">
+                    <div class="product-relavance-inner">
+                        <span class="relavance">Relavance <span class="relavance-arrow"><i class='bx bxs-chevron-down'></i></span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Here is filter-menu -->
+
+        <div class="overly"></div>
+        <section class="filter-menu">
+            
+            <div class="filter-menu-inner">
+                <div class="filter-menu-inner-headding">
+                    <strong class="headding-title">Filter Your Selection</strong>
+                    <span class="filter-close-btn"><i class='bx bx-x' ></i></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Here is Product body -->
+
+        
+
+
+    </section>
+
+
+    <script>
+        let filter = document.querySelector(".filter"),
+            filterclosebtn = document.querySelector(".filter-close-btn"),
+            overly = document.querySelector(".overly"),
+            filtermenu = document.querySelector(".filter-menu");
+
+            filter.addEventListener('click', ()=> overly.classList.add("active"))
+            filter.addEventListener('click', ()=> filtermenu.classList.add("active"))
+            filterclosebtn.addEventListener('click', ()=> filtermenu.classList.remove("active"))
+            filterclosebtn.addEventListener('click', ()=> overly.classList.remove("active"))
+
+    </script>
+</body>
+</html>
